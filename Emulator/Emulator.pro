@@ -12,12 +12,14 @@ TARGET = Emulator
 TEMPLATE = app
 DEFINES += EMULATOR
 
-include(Project.pri)
+include(Arduino.pri)
 include(Arduboy.pri)
+include(Project.pri)
 
-INCLUDEPATH += Platform
+INCLUDEPATH += Platform \
+    Arduino
 
-SOURCES += main.cpp\
+SOURCES += main.cpp \
     DisplayWidget.cpp \
     Emulator.cpp \
     GameInput.cpp \

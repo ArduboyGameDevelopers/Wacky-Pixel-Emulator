@@ -1,20 +1,16 @@
 INCLUDEPATH += Arduboy
 
-SOURCES += Arduboy/Arduboy.cpp \
-    Arduboy/Arduino.cpp \
-    Arduboy/audio.cpp \
-    Arduboy/core.cpp \
-    Arduboy/Print.cpp \
-    Arduboy/WMath.cpp \
-    Arduboy/WString.cpp \
-    Arduboy/glcdfont.c
+HEADERS += \
+    $$PWD/Arduboy/Arduboy.h \
+    $$PWD/Arduboy/audio.h \
+    $$PWD/Arduboy/core.h \
+    $$PWD/Arduboy/EEPROM.h \
+    $$PWD/Arduboy/pins_arduino.h \
+    $$PWD/Arduboy/platform.h
 
-HEADERS  += Arduboy/Arduboy.h \
-    Arduboy/audio.h \
-    Arduboy/core.h \
-    Arduboy/EEPROM.h \
-    Arduboy/pins_arduino.h \
-    Arduboy/platform.h \
-    Arduboy/Print.h \
-    Arduboy/Printable.h \
-    Arduboy/WString.h
+SOURCES += \
+    $$PWD/Arduboy/Arduboy.cpp \
+    $$PWD/Arduboy/Arduino.cpp \
+    $$PWD/Arduboy/audio.cpp \
+    $$PWD/Arduboy/core.cpp \
+    $$PWD/Arduboy/glcdfont.c

@@ -1,0 +1,18 @@
+require_relative 'common'
+
+include Common
+
+task :init do
+  $dir_emulator = resolve_path File.expand_path('../Emulator')
+  $dir_arduboy  = resolve_path "#{$dir_project}/Arduboy"
+  $dir_arduino  = resolve_path "#{$dir_project}/Arduino"
+
+  $dir_project  = resolve_path File.expand_path('../Project')
+end
+
+desc 'Generate Qt project files'
+task :generate_qt_project_files => [:init] do
+
+
+
+end

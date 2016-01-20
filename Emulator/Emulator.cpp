@@ -1,6 +1,7 @@
 #include "Emulator.h"
 
 #include "platform.h"
+#include "game.h"
 
 Emulator emulator;
 
