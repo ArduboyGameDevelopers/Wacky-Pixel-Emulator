@@ -28,34 +28,10 @@ public:
 public slots:
     void runUpdate();
 
-    void onActionNew();
-    void onActionOpen();
-    void onActionSave();
-    void onActionSaveAs();
-    
-    void onActionResize();
-    void onActionOffset();
-
-    void onActionRestart();
-    void onActionImportTileSet();
-    void onActionImport();
-    void onActionExport();
-    void onActionSnapshot();
-
     void onActionPlay();
     void onActionPause();
-    void onActionEdit(bool selected);
     void onActionStep();
-
-    void onActionToggleGrid(bool selected);
-    void onCharacterButton(bool);
-    void onDeleteEnemyButton();
-    
-    void onTileSetSelected(int index);
-    void onDirectionButtonChecked(bool checked);
-    void onCharacterListItemClicked(const QModelIndex & index);
-    
-    void playerHealthEditReturnPressed();
+    void onActionSnapshot();
 
 public:
     void copyScreenBuffer(unsigned const char* screenBuffer, int bufferWidth, int bufferHeight);
@@ -65,31 +41,14 @@ public:
     inline DisplayWidget *displayWidget() const { return _displayWidget; }
     inline Ui::MainWindow* ui() const { return _ui; }
     
-public:
-    void updateLevelUi(Level *level);
-    void updateWindowTitle(Level *level);
-
 protected:
     void keyPressEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
     void keyReleaseEvent(QKeyEvent *event) Q_DECL_OVERRIDE;
 
 private:
-    void loadTiles();
-    void selectTileSet(int index);
-    
     void setupToolBar(QToolBar* toolBar);
     void setupActions();
-    void setupCharacterList();
-    void setupParamUI();
-    
     void setPauseMode(bool pauseMode);
-    void setEditMode(bool editMode);
-    
-    void setEditorTool(EditorTool *tool);
-    void pushEditorTool(EditorTool *tool);
-    void popEditorTool();
-    
-    void updateDirectionalRadioButtons();
 
 private:
     static MainWindow *_instance;

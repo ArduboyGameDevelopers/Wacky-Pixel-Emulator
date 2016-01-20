@@ -26,29 +26,10 @@ SOURCES += main.cpp\
 
 HEADERS  += \
     DisplayWidget.h \
-    EditorPanTool.h \
-    EditorTool.h \
     Emulator.h \
     GameInput.h \
     MainWindow.h \
-    EditorDrawTool.h \
-    EditorState.h \
-    Level.h \
-    TilesWidget.h \
-    Tileset.h \
-    Object.h \
-    EditorTools.h \
-    Settings.h \
-    Constants.h \
-    Input2Dialog.h \
-    EditorCharTool.h \
-    CharacterButton.h \
-    CharacterListView.h \
-    Version.h \
-    CharacterInfo.h \
-    ParamCheckBox.h \
-    Params.h \
-    ResizeDialog.h
+    Constants.h
 
 FORMS    += \
     MainWindow.ui

@@ -45,3 +45,9 @@ INCLUDEPATH += $${PROJ_PATH}
 #    $${PROJ_PATH}/debug.h \
 #    $${PROJ_PATH}/player.h \
 #    $${PROJ_PATH}/bear.h
+
+HEADERS += \
+    $${PROJ_PATH}/game.h
+
+SOURCES += \
+    $${PROJ_PATH}/game.cpp

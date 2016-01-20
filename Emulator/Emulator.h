@@ -11,7 +11,7 @@ public:
 public:
     void start();
     void reset();
-    void update(uint32_t dt);
+    void update(unsigned int dt);
     void stop();
 
 public:
@@ -20,16 +20,13 @@ public:
     
 public:
     inline void step() { _step = true; }
-    inline bool editMode() const { return _editMode; }
-    inline void setEditMode(bool editMode) { _editMode = editMode; }
     inline bool paused() const { return _paused; }
     inline void setPaused(bool paused) { _paused = paused; }
     
 private:
-    bool _editMode;
     bool _paused;
     bool _step;
-    uint32_t _frameTime;
+    unsigned int _frameTime;
 };
 
 extern Emulator emulator;
